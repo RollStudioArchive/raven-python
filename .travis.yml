@@ -1,6 +1,5 @@
 language: python
 python:
-  - "2.6"
   - "2.7"
   - "3.2"
   - "3.3"
@@ -8,10 +7,8 @@ python:
   - "pypy"
 env:
   matrix:
-    - DJANGO=Django==1.4.15
-    - DJANGO=Django==1.5.10
-    - DJANGO=Django==1.6.7
     - DJANGO=Django==1.7
+    - DJANGO=Django==1.9
     - 'DJANGO="-e git+git://github.com/django/django.git#egg=Django"'
   global:
     - 'PIP_DOWNLOAD_CACHE=".pip_download_cache"'

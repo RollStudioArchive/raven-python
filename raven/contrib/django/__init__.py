@@ -7,4 +7,4 @@ raven.contrib.django
 """
 from __future__ import absolute_import
 
-from .client import DjangoClient  # NOQA
+default_app_config = 'raven.contrib.django.apps.RavenConfig'
